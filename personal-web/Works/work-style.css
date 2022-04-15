@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    
+    
+}
+.sidebar{
+    
+    visibility: hidden;
+    position: fixed;
+    background-color: darksalmon;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    
+}
+.sidemenuitem{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    color: white;
+    align-items: center;
+    margin-top: 15%;
+   
+
+}
+
+.header{
+    z-index: 1;
+    width: 100%;
+    min-height: 80px;
+    max-height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darksalmon;
+    position: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+.burger{
+    display: none;
+    cursor: pointer;
+   position: absolute;
+}
+#logo{
+    
+    font-family: 'Ubuntu',sans-serif;
+    font: italic;
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.navbar{
+    font-family: 'Poppins';
+    margin-top: 10px; 
+    list-style: none; 
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    text-align: center;
+}
+
+.menuitem{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+
+}
+.menuitem::after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+
+}
+.menuitem:hover::after{
+    width: 100%; 
+    left: 0; 
+}
+.close{
+    
+    visibility: hidden;
+    color: black;
+    
+}
+
+.works-container{
+    align-items: center;
+    margin: 8%;
+}
+
+.websites{
+    display: inline-block;
+    border-style: groove;
+    border-color: #d6d6d6;
+    border-width: 10px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.websites:hover{
+
+    border-color: #f34d4d;
+}
+.web-img{
+    width: 400px;
+}
+
+@media screen and (max-width:768px) {
+    
+    body{
+        overflow-x: hidden;
+        
+    }
+    #logo{
+        font-size: 30px;
+    }
+    .navbar{
+        width: 200px;
+    }
+    .menuitem{
+        visibility: hidden;
+    }
+    .burger{
+        right: 15px;
+        display: block;
+    }
+    .close{
+        margin-top: 30px;
+        margin-left: 85%;
+        right: 10px;
+        visibility: hidden;
+        color: black;
+        
+    }
+    /* Works HTML 2 */
+    .web-img{
+        width: 350px;
+    }
+    .websites{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .works-container{
+        margin: 0;
+        margin-top: 25%;
+        margin-left: 6%;
+    }
+}

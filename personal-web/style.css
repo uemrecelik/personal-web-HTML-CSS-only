@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    
+    
+}
+.sidebar{
+    
+    visibility: hidden;
+    position: fixed;
+    background-color: darksalmon;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    
+}
+.sidemenuitem{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    color: white;
+    align-items: center;
+    margin-top: 15%;
+   
+
+}
+
+.header{
+    z-index: 1;
+    width: 100%;
+    min-height: 80px;
+    max-height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darksalmon;
+    position: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+.burger{
+    display: none;
+    cursor: pointer;
+   position: absolute;
+}
+#logo{
+    
+    font-family: 'Ubuntu',sans-serif;
+    font: italic;
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.navbar{
+    font-family: 'Poppins';
+    margin-top: 10px; 
+    list-style: none; 
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    text-align: center;
+}
+
+.menuitem{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+
+}
+.menuitem::after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+
+}
+.menuitem:hover::after{
+    width: 100%; 
+    left: 0; 
+}
+.close{
+    
+    visibility: hidden;
+    color: black;
+    
+}
+.section1{
+   overflow-y: hidden;
+   background-image: url(/images/section1.png);
+   background-position: 90%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 800px;
+   justify-content: space-around;
+   align-items: center;
+   position: relative;
+   
+
+}
+.emretext{
+    display: inline-flex;
+    margin-left: 10%;
+    margin-top: 300px;
+    font-family: 'Poppins';
+    font-size: 30px;
+
+    }
+.wrapper{
+    display: inline-flex;
+    margin-top: 0px;
+    left: 0;
+    margin-left: 132px;
+    font-family: 'Poppins';
+    font-size: 30px;
+    
+}
+#iam{
+    text-align: end;
+}
+
+.dynamic-text{
+    margin-left: 5px;
+    margin-top: 45px;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    
+}
+.slide{
+    color:#FC6D6D;
+    list-style: none;
+    font-family: 'Poppins';
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -180px;
+        
+    }
+}
+.animated-text{
+    position: relative ;
+
+}
+.animated-text::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background: #EEEDDE ;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #FC6D6D ;
+    animation: typing 1.5s steps(18) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        
+    }
+}
+.button-wrapper{
+    margin-left: 20%;
+    margin-top: 20px;
+   
+    
+}
+#hireID{
+  overflow-y: hidden;
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+
+}
+#hireSpanID{
+    position: relative;
+    z-index: 2;
+}
+#hireID::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+#hireID:hover{
+    color: #fff;
+}
+
+#hireID:hover::after{
+    width: 100%;
+}
+/* ////end of section 1///////////////////////
+*/
+#space1{
+    background-color: #C1CBBC;
+    opacity: 0.4;
+    width: 100%;
+    height: 15px;
+}
+.section2{
+    background-color: #FAFAF0;
+    height: fit-content;
+    
+
+}
+#about-text{
+    display: inline-block;
+    font-size: 60px;
+    margin-top: 60px;
+    margin-left: 50%;
+}
+.gif{
+    width: 403px;
+    height: 304px; 
+    border: rgb(5, 5, 5);
+    border-radius: 1%;
+}
+.about-wrapper{
+    display: -webkit-box;
+    margin-left:7%;
+    margin-top: 60px;
+}
+#about{
+    margin-left: 30px;
+    margin-right: 30%;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+/* ////////////////////animated butto//////////////////////// */
+
+.see-btn,
+.see-btn::after {
+ margin-top: 20px;   
+ margin-left: 35%;
+ margin-bottom: 150px;
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #db0d3d 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+ overflow-y: hidden;
+ cursor: pointer;
+}
+
+.see-btn::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "See My Works";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+.see-btn:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+/* Section 3 */
+
+.section3{
+    margin-top: 0;
+    background: rgb(30,30,40);
+}
+
+.contat-text{
+    margin-top: 50px;
+    color: #FAFAF0;
+    font-family: 'Poppins';
+    font-size: 50px;
+    margin-left: 20%;
+}
+
+form {
+
+    max-width:60%; 
+    margin:50px auto; 
+    
+}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+/* /////////////  WORKS HTML  //////////////// */
+.works-head{
+    margin-top: 100px;
+    margin-left: 10%;
+    font-family: 'Poppins';
+    font-size: 35px;
+}
+
+
+.works-container{
+    align-items: center;
+    margin: 8%;
+}
+
+.websites{
+    display: inline-block;
+    border-style: groove;
+    border-color: #d6d6d6;
+    border-width: 10px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.websites:hover{
+
+    border-color: #f34d4d;
+}
+/*/////////      Phonesss    //////////// */
+/*/////////      Phonesss    /////////////*/
+/*/////////      Phonesss    //////////////*/
+@media screen and (max-width:768px) {
+    
+    body{
+        overflow-x: hidden;
+        
+    }
+    #logo{
+        font-size: 30px;
+    }
+    .navbar{
+        width: 200px;
+    }
+    .menuitem{
+        visibility: hidden;
+    }
+    .burger{
+        right: 15px;
+        display: block;
+    }
+    .close{
+        margin-top: 30px;
+        margin-left: 85%;
+        right: 10px;
+        visibility: hidden;
+        color: black;
+        
+    }
+    .section1{
+       overflow-y: hidden;
+       background-image: url(/images/section1-m.png);
+       background-position: 50%;
+       
+    
+    }
+    .emretext{
+        display: inline-block;
+        font-family: 'Poppins';
+        margin-bottom: 0;
+        margin-top: 100px;
+        margin-left: 5%;
+      
+        }
+    #pixelme{
+        display: block;
+        height: 500px;
+        float: none;
+        margin: 0;
+        margin-left: 10%;
+        
+        
+    }
+    #iam{
+        text-align:left ;
+    }
+    .dynamic-text{
+        margin: 0;
+        
+    }
+    .button-wrapper{
+        margin-left: 5%;
+    }
+
+    /* Section 2 */
+    .section2{
+        background-position: 50%;
+        height: fit-content;
+    }
+    #about-text{
+        margin: 0;
+        margin-left: 70px;
+    }
+    .about-wrapper{
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .gif{
+        margin: 2%;
+    }
+    .see-btn{
+        margin: 0;
+        margin-left: 20%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    /* Works HTML 2 */
+    .web-img{
+        width: 350px;
+    }
+    .websites{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .works-container{
+        margin: 0;
+        margin-top: 25%;
+        margin-left: 6%;
+    }
+
+
+
+
+
+}
