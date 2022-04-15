@@ -1,4 +1,4 @@
-# personal-web-HTML-CSS-only
+#Fully responsive personal portfolio web templat
 Personal website template with only basic HTML CSS JS 
 
 Best practice for the start web development 
