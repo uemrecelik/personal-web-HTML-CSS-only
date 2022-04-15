@@ -1,7 +1,7 @@
 <?php
 
 
-$to = "emre199928@gmail.com";
+$to = "yourmail";
 $_name = $_POST['name'];
 $_email = $_POST['email'];   
 $_msg = $_POST['message'];
